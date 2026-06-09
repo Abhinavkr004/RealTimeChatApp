@@ -1,6 +1,6 @@
 import { httpClient } from "../config/AxiosHelper"
 export const createRoomApi = async (roomDetail)=>{
-    const response = await httpClient.post(`real-time-chat-app-nine-tau.vercel.app/api/v1/rooms`,roomDetail,{
+    const response = await httpClient.post(`https://chatapp-backend-2-n84o.onrender.com/api/v1/rooms`,roomDetail,{
         headers: {
             "Content-Type": "text/plain",
         }
@@ -9,11 +9,11 @@ export const createRoomApi = async (roomDetail)=>{
 };
 
 export const joinChatApi=async(roomId)=>{
-    const response = await httpClient.get(`real-time-chat-app-nine-tau.vercel.app/api/v1/rooms/${roomId}`)
+    const response = await httpClient.get(`https://chatapp-backend-2-n84o.onrender.com/api/v1/rooms/${roomId}`)
     return response.data;
 };
 
 export const getMessages = async(roomId,page=0,size=50)=>{
-    const response = await httpClient.get(`real-time-chat-app-nine-tau.vercel.app/api/v1/rooms/${roomId}/Messages?page=${page}&size=${size}`);
+    const response = await httpClient.get(`https://chatapp-backend-2-n84o.onrender.com/api/v1/rooms/${roomId}/Messages?page=${page}&size=${size}`);
     return response.data;
 };  
