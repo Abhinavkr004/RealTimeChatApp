@@ -1,5 +1,5 @@
 import axios from 'axios';
-export const baseURL= 'https://chatapp-backend-2-n84o.onrender.com';
+export const baseURL= 'https://chatapp-backend-1-f1wn.onrender.com';
 export const httpClient = axios.create({
     baseeURL: baseURL,
 });
