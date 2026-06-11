@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/rooms")
-@CrossOrigin(origins = {"https://real-time-chat-app-nine-tau.vercel.app"})
+@CrossOrigin("http://localhost:5173")
 
 public class RoomController {
     // it is for creating the room and join the room
