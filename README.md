@@ -47,4 +47,5 @@ A modern, full-stack, real-time chat application featuring a fluid user interfac
 
 ## Appication Preview
 
+```
 ![image alt](https://github.com/Abhinavkr004/RealTimeChatApp/blob/42db7c1317831af70b88b0edf9876ef013cf9113/Screenshot%202026-06-11%20215526.png)
