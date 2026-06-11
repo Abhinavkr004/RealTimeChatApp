@@ -22,7 +22,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat") // connection establishment
-                .setAllowedOrigins("https://real-time-chat-app-nine-tau.vercel.app")
+                .setAllowedOrigins("http://localhost:5173")
                 .withSockJS();
 
     }
