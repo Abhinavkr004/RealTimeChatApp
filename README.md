@@ -1,20 +1,50 @@
-# React + Vite
+# Real-Time Chat Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```markdown
 
-Currently, two official plugins are available:
+A modern, full-stack, real-time chat application featuring a fluid user interface built with **React** and **Tailwind CSS**, powered by a robust and scalable **Spring Boot** backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Real-Time Messaging:** Instant message delivery and receipt utilizing WebSockets (STOMP/SockJS).
+- **Dynamic Room Management:** Create, join, and fetch distinct chat rooms dynamically without service interruption.
+- **Responsive Design:** A sleek, mobile-first UI constructed with Tailwind CSS, supporting seamless cross-device communication.
+- **Robust Error Handling:** End-to-end exception handling mapping explicit HTTP status codes between layers.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
 
-You can also review my Chat App below
+### Frontend
+- **Framework:** React.js (Hooks, Functional Components)
+- **Styling:** Tailwind CSS (Utility-first, responsive layouts)
+- **HTTP Client:** Axios (For REST API calls like creating/fetching rooms)
+- **Real-Time Client:** `@stomp/stompjs` / `sockjs-client`
+
+### Backend
+- **Framework:** Spring Boot (Java)
+- **Real-Time Layer:** Spring WebSockets (STOMP Messaging Broker)
+- **Build Tool:** Maven / Gradle
+- **Deployment Platform:** Render (Web Services)
+
+---
+
+## 📁 Project Architecture
+
+```text
+├── chatapp-frontend/      # React Client Application
+│   ├── src/
+│   │   ├── components/    # UI elements (ChatWindow, Sidebar, RoomManager)
+│   │   ├── services/      # API and WebSocket communication logic
+│   │   └── App.jsx        # Main application router and context provider
+└── chatapp-backend/       # Spring Boot Backend Service
+    ├── src/main/java/com/chatapp/
+    │   ├── controller/    # REST Endpoints (e.g., /api/v1/rooms) & Message Mapping
+    │   ├── model/         # Chat Models (Message, ChatRoom)
+    │   └── config/        # WebSocket Broker & CORS Filter Security setups
+
+## Appication Preview
 
 ![image alt](https://github.com/Abhinavkr004/RealTimeChatApp/blob/42db7c1317831af70b88b0edf9876ef013cf9113/Screenshot%202026-06-11%20215526.png)
