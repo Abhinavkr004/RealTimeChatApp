@@ -1,6 +1,5 @@
 # Real-Time Chat Application
 
-```markdown
 
 A modern, full-stack, real-time chat application featuring a fluid user interface built with **React** and **Tailwind CSS**, powered by a robust and scalable **Spring Boot** backend.
 
